@@ -5,14 +5,14 @@
 </head>
 <body>
 <p>
-    Hello, <span th:text="${name}">Peter Static</span>!
+    Hello, <span th:text="${name}"></span>!
 </p>
 <p th:if="${name.length() > 10}">
     Wow! You've got a long name (more than 10 chars)!
 </p>
 <p>
-    You have been successfully subscribed to the <b>CodingNConcepts</b> on
-    <span th:text="${subscriptionDate}">28-12-2012</span>
+    You have been successfully subscribed to <b>my channel</b> on
+    <span th:text="${subscriptionDate}"></span>
 </p>
 <p>We write on following technologies:-</p>
 <ul th:remove="all-but-first">
@@ -22,7 +22,7 @@
 </ul>
 <p>
     Regards, <br/>
-    <em>The CodingNConcepts Team</em>
+    <em>Vuong</em>
 </p>
 </body>
 </html>
