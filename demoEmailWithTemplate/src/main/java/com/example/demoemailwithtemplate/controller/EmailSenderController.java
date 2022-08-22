@@ -25,4 +25,8 @@ public class EmailSenderController {
         emailSenderService.sendSimpleMessage(email);
     }
 
+    @PostMapping("email/sendAtt")
+    public void sendMessageWithAttachment(@RequestBody Email email) {
+        emailSenderService.sendMailWithAttachment(email);
+    }
 }
